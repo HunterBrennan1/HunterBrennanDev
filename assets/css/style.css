@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: poppins;
   width: 100%;
@@ -20,7 +24,7 @@ section {
 
 footer {
   height: 500px;
-  background-color: black;
+  background-color: #1c1d25;
 }
 
 nav {
@@ -34,10 +38,19 @@ ul {
   list-style-type: none;
   justify-content: space-around;
   font-size: 30px;
+  margin-right: 20px;
 }
 
-li {
+li a {
   text-decoration: none;
+  color: #fff;
+}
+
+li a:hover {
+  background-color: #fff;
+  color: #1c1d25;
+  border-radius: 30px;
+  padding: 8px;
 }
 
 h1 {
@@ -47,6 +60,15 @@ h1 {
 
 h2 {
   font-size: 50px;
+}
+
+h3 {
+  text-align: center;
+  justify-content: space-evenly;
+  color: #fff;
+  position: relative;
+  display: flex;
+
 }
 
 p {
@@ -101,6 +123,7 @@ p {
 
 .sub-section1 {
   display: flex;
+  height: 400px;
   justify-content: space-around;
   padding: 80px;
   color: #fff;
@@ -113,9 +136,12 @@ p {
 }
 
 .sub-section2 {
-  display: flex;
-  justify-content: space-around;
+  box-sizing: border-box;
+  height: 600px;
   padding: 80px;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
   background-image: url(../mountains.jpg);
   background-color: #1c1d25;
   background-blend-mode: soft-light;
@@ -127,6 +153,7 @@ p {
 .sub-section3 {
   display: flex;
   justify-content: space-around;
+  height: 400px;
   padding: 80px;
   background-image: url(../greenlandscape.jpg);
   background-color: #1c1d25;
@@ -148,4 +175,47 @@ p {
 .portrait-container {
   display: flex;
   align-items: center;
+}
+
+#work {
+  color: #fff;
+  display: block;
+  position: absolute;
+  text-align: center;
+  bottom: 450px;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  position: relative;
+  display: inline;
+  object-fit: contain;
+}
+
+.column,
+.project-image {
+  height: 300px;
+  width: 500px;
+}
+
+.project-image {
+  border-style: solid;
+  border-color: #1c1d25;
+  border-width: 4px;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+  position: relative;
+  top: 110px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
