@@ -76,8 +76,9 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 60px;
   z-index: 90;
+
 }
 
 h3 {
@@ -86,7 +87,14 @@ h3 {
   color: #fff;
   position: relative;
   display: flex;
+}
 
+h4 {
+  text-align: center;
+  color: #FFF;
+  position: relative;
+  top: 150px;
+  font-size: 40px;
 }
 
 p {
@@ -246,11 +254,27 @@ p {
   width: 500px;
 }
 
+
+
 .project-image {
   border-style: solid;
   border-color: #1c1d25;
   border-width: 4px;
   cursor: pointer;
+}
+
+.project-image-cheatsheet {
+  height: 400px;
+  border-color: #1c1d25;
+  border-width: 4px;
+  border-style: solid;
+  bottom: 50px;
+  position: relative;
+}
+
+.cheatsheet-title {
+  position: relative;
+  bottom: 50px;
 }
 
 .row {
@@ -313,4 +337,12 @@ form .submit:hover {
 
 .submit {
   color: black;
+}
+
+.resume-text {
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  top: 150px;
+  text-align: center;
 }
