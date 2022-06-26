@@ -7,7 +7,10 @@
 body {
   font-family: poppins;
   width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
+
 
 section {
   background-color: white;
@@ -44,6 +47,7 @@ ul {
 li a {
   text-decoration: none;
   color: #fff;
+
 }
 
 li a:hover {
@@ -68,6 +72,7 @@ h3 {
   color: #fff;
   position: relative;
   display: flex;
+  font-size: ;
 
 }
 
@@ -123,7 +128,7 @@ p {
 
 .sub-section1 {
   display: flex;
-  height: 400px;
+  height: 100vh;
   justify-content: space-around;
   padding: 80px;
   color: #fff;
@@ -137,8 +142,8 @@ p {
 
 .sub-section2 {
   box-sizing: border-box;
-  height: 600px;
-  padding: 80px;
+  height: 100vh;
+  /* padding: 80px; */
   position: relative;
   display: flex;
   justify-content: space-evenly;
@@ -151,9 +156,7 @@ p {
 }
 
 .sub-section3 {
-  display: flex;
-  justify-content: space-around;
-  height: 400px;
+  height: 100vh;
   padding: 80px;
   background-image: url(../greenlandscape.jpg);
   background-color: #1c1d25;
@@ -161,6 +164,28 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  text-align: center;
+}
+
+.sub-section4 {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  padding: 80px;
+  background-image: url(../moon.jpg);
+  background-color: #1c1d25;
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* #contact-me {
+  color: #fff;
+} */
+
+#resume {
+  color: #fff;
 }
 
 .portrait {
@@ -177,13 +202,7 @@ p {
   align-items: center;
 }
 
-#work {
-  color: #fff;
-  display: block;
-  position: absolute;
-  text-align: center;
-  bottom: 450px;
-}
+
 
 .column {
   float: left;
@@ -191,6 +210,7 @@ p {
   position: relative;
   display: inline;
   object-fit: contain;
+  top: 300px;
 }
 
 .column,
@@ -211,11 +231,69 @@ p {
   justify-content: space-evenly;
   overflow: hidden;
   position: relative;
-  top: 110px;
 }
 
 .row::after {
   content: "";
   display: table;
   clear: both;
+}
+
+#work {
+  color: #fff;
+  display: block;
+  position: absolute;
+  text-align: center;
+  height: 100px;
+  bottom: 650px;
+  font-size: 80px;
+  z-index: 10;
+  margin: 0;
+}
+
+.contact-me-title {
+  margin-top: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 4s ease-in-out;
+  text-align: center;
+}
+
+form {
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 4px solid #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  background: #fff;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Poppins;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+form .submit:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+.submit {
+  color: black;
 }

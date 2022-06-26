@@ -11,16 +11,18 @@
 <body>
   <!-- Header section including buttons to bring users to designated sections of the page -->
   <section class="hero">
-    <nav>
-      <img class="logo" src="../Hunter-Portfolio/assets/—Pngtree—red and black logo_5517319.png"
-        alt="Hunter Brennan's logo">
-      <ul>
-        <li><a href="#about-me">About me</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
-        <li><a href="#resume">Resume</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <img class="logo" src="../Hunter-Portfolio/assets/—Pngtree—red and black logo_5517319.png"
+          alt="Hunter Brennan's logo">
+        <ul>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+          <li><a href="#resume">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
     <!-- Big text on left of screen with button to my about me section -->
     <div class="hero-area">
       <div class="hero-text">
@@ -89,7 +91,28 @@
       </div>
     </div>
   </section>
-  <section class="sub-section3"></section>
+  <section class="sub-section3">
+
+    <div class="contact-me-title">
+      <h2 id="contact-me">Contact Me</h2>
+    </div>
+    <div class="contact-me-form">
+      <form id="contact-me-form" method="post" action="">
+        <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+
+        <input name="email" type="text" class="form-control" placeholder="Email" required><br>
+
+        <textarea name="message" class="form-control" placeholder="Leave me a message saying hello!" rows="4" required>
+        </textarea><br>
+
+        <input type="submit" class="form-control submit" value="SEND MESSAGE">
+      </form>
+    </div>
+  </section>
+  <section class="sub-section4">
+    <h2 id="resume">Resume</h2>
+  </section>
+
   <footer></footer>
 
 
