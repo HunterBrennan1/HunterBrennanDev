@@ -30,14 +30,27 @@ footer {
   background-color: #1c1d25;
 }
 
+
 nav {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  text-shadow:
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;
 }
+
+/* nav:hover {
+  
+} */
 
 ul {
   display: flex;
-  width: 600px;
+  width: 800px;
   list-style-type: none;
   justify-content: space-around;
   font-size: 30px;
@@ -47,14 +60,14 @@ ul {
 li a {
   text-decoration: none;
   color: #fff;
-
 }
 
 li a:hover {
   background-color: #fff;
   color: #1c1d25;
   border-radius: 30px;
-  padding: 8px;
+  padding: 5px;
+  text-shadow: none;
 }
 
 h1 {
@@ -64,6 +77,7 @@ h1 {
 
 h2 {
   font-size: 50px;
+  z-index: 90;
 }
 
 h3 {
@@ -72,7 +86,6 @@ h3 {
   color: #fff;
   position: relative;
   display: flex;
-  font-size: ;
 
 }
 
@@ -86,6 +99,7 @@ p {
   height: 100%;
   justify-content: space-between;
   align-items: center;
+  margin-top: 100px;
 }
 
 .hero-text {
@@ -144,7 +158,7 @@ p {
   box-sizing: border-box;
   height: 100vh;
   /* padding: 80px; */
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: space-evenly;
   background-image: url(../mountains.jpg);
@@ -180,21 +194,34 @@ p {
   background-repeat: no-repeat;
 }
 
-/* #contact-me {
-  color: #fff;
-} */
-
-#resume {
-  color: #fff;
+.sub-section-title {
+  position: absolute;
+  height: 100px;
+  text-align: center;
 }
 
-.portrait {
+#portrait {
   width: 300px;
   border-radius: 150px;
   display: flex;
   border-style: solid;
   border-color: #fff;
+}
 
+
+#resume {
+  color: #fff;
+  z-index: 100;
+}
+
+
+#work {
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: 80px;
+  z-index: 10;
+  margin: 0;
 }
 
 .portrait-container {
@@ -239,17 +266,7 @@ p {
   clear: both;
 }
 
-#work {
-  color: #fff;
-  display: block;
-  position: absolute;
-  text-align: center;
-  height: 100px;
-  bottom: 650px;
-  font-size: 80px;
-  z-index: 10;
-  margin: 0;
-}
+
 
 .contact-me-title {
   margin-top: 100px;
