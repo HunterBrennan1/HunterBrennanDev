@@ -232,6 +232,13 @@ p {
   margin: 0;
 }
 
+.information {
+  position: relative;
+  top: 200px;
+  text-align: left;
+  height: 300px;
+}
+
 .portrait-container {
   display: flex;
   align-items: center;
@@ -264,15 +271,14 @@ p {
 }
 
 .project-image-cheatsheet {
-  height: 400px;
+  height: 300px;
   border-color: #1c1d25;
   border-width: 4px;
   border-style: solid;
-  bottom: 50px;
   position: relative;
 }
 
-.cheatsheet-title {
+*/ .cheatsheet-title {
   position: relative;
   bottom: 50px;
 }
