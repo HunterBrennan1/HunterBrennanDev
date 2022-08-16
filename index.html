@@ -15,11 +15,22 @@
       <nav>
         <img class="logo" src="../Hunter-Portfolio.github.io/assets/images/—Pngtree—red and black logo_5517319.png"
           alt="Hunter Brennan's logo">
-        <ul>
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact-me">Contact Me</a></li>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-me">Contact Me</a>
+          </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
     <!-- Big text on left of screen with button to my about me section -->
@@ -27,7 +38,7 @@
       <div class="hero-text">
         <h1>Hunter Brennan</h1>
         <p>Software Developer</p>
-        <div class="button">About me</div>
+        <div class="button"><a class="about-me-button-hero" href="#about-me">About me</a></div>
       </div>
       <!-- Socials buttons on the right side of the screen -->
       <div class="socials">
@@ -72,7 +83,8 @@
           to
           learn
           and
-          improve my skills on my socials. Feel free to Connect or Follow me on my <span>Linkedin</span>.<br><br>I am
+          improve my skills on my socials. Feel free to Connect or Follow me on my <a
+            href="https://www.linkedin.com/in/hunter-brennan-523000241/" class="linkedin-link">Linkedin</a>.<br><br>I am
           currently attending a 6 month Full-Stack coding bootcamp with UC Berkeley, You can find my skills listed below
           in the <strong>Skills</strong> section.</p>
       </div>
@@ -152,8 +164,17 @@
       </div>
     </div>
   </section>
-  <section class="sontact-section">
-
+  <section id="contact-me" class="contact-section">
+    <div class="contact-container">
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <h3 class="form-title">CONTACT ME!</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="Phone" placeholder="Phone Number" required>
+        <textarea id="message" rows="4" placeholder="Let me know how I can help!"></textarea>
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </div>
   </section>
 
   <!-- <section class="sub-section2">
@@ -225,6 +246,7 @@
 
 
   <script src="../Hunter-Portfolio.github.io/assets/js/script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </body>
 

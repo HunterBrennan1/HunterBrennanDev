@@ -1,28 +1,26 @@
-setInterval(showTime, 1000);
-function showTime() {
-  let time = new Date();
-  let hour = time.getHours();
-  let min = time.getMinutes();
-  let sec = time.getSeconds();
-  am_pm = "AM";
-
-  if (hour > 12) {
-    hour -= 12;
-    am_pm = "PM";
-  }
-  if (hour == 0) {
-    hr = 12;
-    am_pm = "AM";
-  }
-
-  hour = hour < 10 ? "0" + hour : hour;
-  min = min < 10 ? "0" + min : min;
-  sec = sec < 10 ? "0" + sec : sec;
-
-  let currentTime = hour + ":"
-    + min + ":" + sec + am_pm;
-
-  document.getElementById("clock")
-    .innerHTML = currentTime;
+function sendEmail() {
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "hunterbrennan15@gmail.com",
+    Password: "password",
+    To: 'hunterbrennan15@gmail.com',
+    From: document.getElementById("email").value,
+    Subject: "New Contact Form Enquiry",
+    Body: "And this is the body"
+  }).then(
+    message => alert(message)
+  );
 }
-showTime();
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active")
+  navMenu.classList.remove("active")
+}))
