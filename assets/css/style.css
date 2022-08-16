@@ -531,12 +531,19 @@ form textarea {
     width: 300px;
   }
 
+  .sub-section1 {
+    height: 900px;
+  }
+
   .hero-area {
-    margin-top: 200px;
+    /* margin-top: 200px; */
+
   }
 
   .hero-text {
     margin-left: 20px;
+    padding-bottom: 50px;
+
   }
 
   ul {
