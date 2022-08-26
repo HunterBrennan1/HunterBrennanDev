@@ -192,7 +192,7 @@ p {
 }
 
 .projects-section {
-  height: 2300px;
+  height: 1600px;
   width: 100%;
 }
 
@@ -419,7 +419,7 @@ form textarea {
   }
 
   .projects-section {
-    height: 3600px;
+    height: 2600px;
   }
 }
 
@@ -585,7 +585,7 @@ form textarea {
   }
 
   .projects-section {
-    height: 3000px;
+    height: 2000px;
   }
 
   .source-code-button {
